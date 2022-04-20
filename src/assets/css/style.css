@@ -1,0 +1,202 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/logo-metz-handball.png);
+    background-size: cover;
+}
+
+.background-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2 10 21 / 85%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.d-none {
+    display: none;
+}
+
+/* Header */
+.header {
+    background: #F2F2F2;
+    padding: 10px 0;
+}
+.header .header-inner {
+    max-width: 1200px;
+    margin: auto;
+}
+.header h2 {
+    margin: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.player-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 35px;
+}
+
+/* Add new buttons */
+.btn-new {
+    padding: 15px 0;
+    text-align: right;
+}
+.btn-new button {
+    padding: 7px 30px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s all;
+}
+.btn-new button:hover {
+    background-color: #890000;
+    color: white;
+}
+
+.player-list {
+    color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid #ffffff00;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+td,
+th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #858585;
+}
+td {
+    background-color: #F2EEEE;
+    color: black;
+    font-size: 0.8em;
+    padding: 15px 8px;
+}
+td.action-buttons {
+    text-align: center;
+}
+
+td.thumbnail {
+    padding: 4px;
+}
+.thumbnail img {
+    width: 30px;
+    margin: auto;
+    display: block;
+}
+
+.icon-edit,
+.icon-delete {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    background-color: white;
+    padding: 7px 3px 3px 3px;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid white;
+    transition: .3s all;
+    cursor: pointer;
+}
+.icon-edit:hover,
+.icon-delete:hover {
+    background-color: #e2e0e0;
+    border: 1px solid white;
+}
+.icon-edit img,
+.icon-delete img {
+    width: 15px;
+}
+span.icon-delete {
+    margin-left: 10px;
+}
+
+
+.background-overlay-form {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2 10 21 / 85%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-new {
+    max-width: 474px;
+    margin: auto;
+    padding: 10px 0 23px;
+    margin-top: 100px;
+    background-color: white;
+    font-family: sans-serif;
+}
+.row-title h2 {
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Form */
+.container-new .row-field {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-size: 0.8em;
+}
+.container-new .row-field label {
+    display: block;
+    padding: 0 0 3px;
+}
+.container-new .row-field input,
+.container-new .row-field select {
+    width: 100%;
+    padding: 5px;
+}
+.container-new .row-field.row-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+.container-new .row-field.row-buttons button {
+    padding: 7px 30px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s all;
+    border: 1px solid #C4C4C4;
+}
+.container-new .row-field.row-buttons button:nth-child(2) {
+    background-color: #890000;
+    color: white;
+}
+.container-new .row-field.row-buttons button:nth-child(1):hover {
+    background-color: #e2e0e0;
+    border: 1px solid white;
+}
+.container-new .row-field.row-buttons button:nth-child(2):hover {
+    background-color: white;
+    color: black;
+}
+
+/* Message alert */
+p.msg-alert {
+    color: red;
+    font-size: 0.7em;
+    text-align: center;
+}
