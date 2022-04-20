@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout joueuse</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="module" src="../assets/scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="row-title">
+        <h2>Nouvelle Dragonne</h2>
+    </div>
+    <div class="players">
+        <div class="player-inner">
+            <div class="btn-new">
+                <button type="submit" id="list"><a href="liste.html">Liste joueuses</a></button>
+            </div>
+        </div>
+    </div>
+    <form id="player-form">
+        <div class="row-field">
+            <label>Nom</label>
+            <input type="text" name="name" />
+        </div>
+
+        <div class="row-field">
+            <label>Prénom</label>
+            <input type="text" name="vorname" />
+        </div>
+        <div class="row-field">
+            <label>Age</label>
+            <input type="number" name="age" />
+        </div>
+
+        <div class="row-field">
+            <label>Poste</label>
+            <select name="position">
+                <option value="">Choisir</option>
+                <option value="gardienne">gardienne</option>
+                <option value="ArriereDroite">Arrière droite</option>
+                <option value="ArriereGauche">Arriere gauche</option>
+                <option value="Demi">Demi centre</option>
+                <option value="AiliereGauche">Ailière gauche</option>
+                <option value="AiliereDroite">Ailière droite</option>
+                <option value="Pivot">Pivot</option>
+                <option value="Entraineur">Entraineur</option>
+            </select>
+        </div>
+
+        <div class="row-field">
+            <label>Image</label>
+            <input type="text" name="thumbnail" />
+        </div>
+
+
+
+        <div class="row-field row-buttons">
+            <button type="submit" id="cancel-new">Annuler</button>
+            <button type="submit" id="save-modifications">Ajouter</button>
+        </div>
+
+        <div>
+            <p id="msg-alert" class="msg-alert"></p>
+        </div>
+    </form>
+</body>
+
+</html>
